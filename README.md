@@ -13,24 +13,18 @@ I retrieved the last 12 months of precipitation data, plot the results and print
 
 ### Station Analysis
 
-* Design a query to calculate the total number of stations in the dataset.
-
-* Design a query to find the most active stations (i.e. which stations have the most rows?).
-
-* Design a query to retrieve the last 12 months of temperature observation data (TOBS).
+I fount the most active stations and retrieved the last 12 months of temperature observation data (TOBS).
 
     ![station-histogram](images/station-histogram.png)
 
 ### Climate App
-Design a Flask API based on the queries that I have just developed.
+I designed a Flask API based on the queries that I have just developed.
 
 ### Routes
 
 * `/`
 
-  * Home page.
-
-  * List all routes that are available.
+  * Home page which list all routes that are available.
 
 * `/api/v1.0/precipitation`
 
