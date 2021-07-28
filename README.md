@@ -16,6 +16,7 @@ I retrieved the last 12 months of precipitation data, plot the results and print
 I fount the most active stations and retrieved the last 12 months of temperature observation data (TOBS).
 
     ![station-histogram](images/station-histogram.png)
+  
 
 ### Climate App
 I designed a Flask API based on the queries that I have just developed.
