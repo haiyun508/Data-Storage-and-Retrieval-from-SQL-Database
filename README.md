@@ -2,7 +2,7 @@
 
 ### Summary
 
-With the use of Python and SQLAlchemy, i did basic climate analysis and data exploration of hawaii climate database with 19551 rows of data. All of the analysis is completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
+With the use of Python and SQLAlchemy, I did basic climate analysis and data exploration of the Hawaii climate database with 19551 rows of data. All of the analysis is completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
 
 ### Precipitation Analysis
 
