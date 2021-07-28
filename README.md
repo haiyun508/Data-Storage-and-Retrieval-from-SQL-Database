@@ -1,24 +1,8 @@
 # SQLAlchemy Homework - Surfs Up!
 
-### Before You Begin
+### Summary
 
-1. Create a new repository for this project called `sqlalchemy-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Add your Jupyter notebook and `app.py` to this folder. These will be the main scripts to run for analysis.
-
-4. Push the above changes to GitHub or GitLab.
-
-![surfs-up.png](images/surfs-up.png)
-
-Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area. The following outlines what you need to do.
-
-## Step 1 - Climate Analysis and Exploration
-
-To begin, use Python and SQLAlchemy to do basic climate analysis and data exploration of your climate database. All of the following analysis should be completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
-
-* Use the provided [starter notebook](climate_starter.ipynb) and [hawaii.sqlite](Resources/hawaii.sqlite) files to complete your climate analysis and data exploration.
+With the use of Python and SQLAlchemy, i did basic climate analysis and data exploration of hawaii climate database. All of the analysis is completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
 
 * Use SQLAlchemy `create_engine` to connect to your sqlite database.
 
@@ -26,15 +10,12 @@ To begin, use Python and SQLAlchemy to do basic climate analysis and data explor
 
 * Link Python to the database by creating an SQLAlchemy session.
 
-* **Important** Don't forget to close out your session at the end of your notebook.
 
 ### Precipitation Analysis
 
-* Start by finding the most recent date in the data set.
+* Find the most recent date in the data set.
 
-* Using this date, retrieve the last 12 months of precipitation data by querying the 12 preceding months of data. **Note** you do not pass in the date as a variable to your query.
-
-* Select only the `date` and `prcp` values.
+* Using this date, retrieve the last 12 months of precipitation data by querying the 12 preceding months of data. 
 
 * Load the query results into a Pandas DataFrame and set the index to the date column.
 
@@ -52,33 +33,12 @@ To begin, use Python and SQLAlchemy to do basic climate analysis and data explor
 
 * Design a query to find the most active stations (i.e. which stations have the most rows?).
 
-  * List the stations and observation counts in descending order.
-
-  * Which station id has the highest number of observations?
-
-  * Using the most active station id, calculate the lowest, highest, and average temperature.
-
-  * Hint: You will need to use a function such as `func.min`, `func.max`, `func.avg`, and `func.count` in your queries.
-
 * Design a query to retrieve the last 12 months of temperature observation data (TOBS).
-
-  * Filter by the station with the highest number of observations.
-
-  * Query the last 12 months of temperature observation data for this station.
-
-  * Plot the results as a histogram with `bins=12`.
 
     ![station-histogram](images/station-histogram.png)
 
-* Close out your session.
-
-- - -
-
-## Step 2 - Climate App
-
-Now that you have completed your initial analysis, design a Flask API based on the queries that you have just developed.
-
-* Use Flask to create your routes.
+### Climate App
+Design a Flask API based on the queries that I have just developed.
 
 ### Routes
 
@@ -111,19 +71,8 @@ Now that you have completed your initial analysis, design a Flask API based on t
 
   * When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates between the start and end date inclusive.
 
-## Hints
 
-* You will need to join the station and measurement tables for some of the queries.
-
-* Use Flask `jsonify` to convert your API data into a valid JSON response object.
-
-- - -
-
-## Bonus: Other Recommended Analyses
-
-* The following are optional challenge queries. These are highly recommended to attempt, but not required for the homework.
-
-* Use the provided [temp_analysis_bonus_1_starter.ipynb](temp_analysis_bonus_1_starter.ipynb) and [temp_analysis_bonus_1_starter](temp_analysis_bonus_2_starter.ipynb) starter notebooks for each bonus challenge.
+## Other Recommended Analyses
 
 ### Temperature Analysis I
 
