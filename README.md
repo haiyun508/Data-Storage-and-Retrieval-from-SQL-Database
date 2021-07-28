@@ -1,31 +1,15 @@
-# SQLAlchemy Homework - Surfs Up!
+# Surfs Up!-SQLAlchemy
 
 ### Summary
 
-With the use of Python and SQLAlchemy, i did basic climate analysis and data exploration of hawaii climate database. All of the analysis is completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
-
-* Use SQLAlchemy `create_engine` to connect to your sqlite database.
-
-* Use SQLAlchemy `automap_base()` to reflect your tables into classes and save a reference to those classes called `Station` and `Measurement`.
-
-* Link Python to the database by creating an SQLAlchemy session.
-
+With the use of Python and SQLAlchemy, i did basic climate analysis and data exploration of hawaii climate database with 19551 rows of data. All of the analysis is completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
 
 ### Precipitation Analysis
 
-* Find the most recent date in the data set.
-
-* Using this date, retrieve the last 12 months of precipitation data by querying the 12 preceding months of data. 
-
-* Load the query results into a Pandas DataFrame and set the index to the date column.
-
-* Sort the DataFrame values by `date`.
-
-* Plot the results using the DataFrame `plot` method.
+I retrieved the last 12 months of precipitation data, plot the results and print the summary statistics.
 
   ![precipitation](images/precipitation.png)
 
-* Use Pandas to print the summary statistics for the precipitation data.
 
 ### Station Analysis
 
